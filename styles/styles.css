@@ -18,6 +18,8 @@ body {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -44,10 +46,16 @@ ol {
   padding-right: 15px;
 }
 
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* header */
 .page-header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .page-navigation {
@@ -107,6 +115,7 @@ a {
 
 .contacts-page {
   display: flex;
+  column-gap: 50px;
 }
 
 .contacts {
@@ -131,17 +140,21 @@ ul {
 
 .head-block {
   background: var(--dark-background-color);
+  padding-top: 200px;
+  padding-bottom: 210px;
+  text-align: center;
 }
 
 .head-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-font-color);
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .head-button {
@@ -187,6 +200,7 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 
 .advantage-list p {
@@ -195,6 +209,13 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
+}
+
+.advantage-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .work {
@@ -208,8 +229,15 @@ ul {
   line-height: 1.17;
   text-align: center;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
+.work-photo {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding-bottom: 94px;
+}
 .team {
   background-color: var(--secondary-background-color);
 }
@@ -221,6 +249,15 @@ ul {
   line-height: 1.17;
   text-align: center;
   color: var(--primary-text-color);
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.team-squad {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+  column-gap: 30px;
 }
 
 .team h3 {
@@ -246,10 +283,12 @@ footer {
 }
 
 .location {
+  display: flex;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: var(--white-font-color);
+  padding-top: 20px;
 }
 
 .location:hover,
@@ -259,6 +298,22 @@ footer {
 
 .logo-footer {
   color: var(--white-font-color);
+}
+
+.footer-logo-link {
+  display: flex;
+  padding-top: 60px;
+}
+
+.footer-adress {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+.footer-contacts {
+  display: flex;
+  grid-column: 9px;
 }
 
 /* portfolio */
@@ -312,6 +367,12 @@ footer {
   line-height: 1.62;
   color: var(--primary-text-color);
 }
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  padding-top: 94px;
+}
 
 .portfolio-list li {
   box-sizing: border-box;
@@ -321,6 +382,13 @@ footer {
   top: 262px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 56px;
 }
 
 .portfolio-list h2 {
