@@ -389,6 +389,7 @@ footer {
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 56px;
+  padding-bottom: 94px;
 }
 
 .portfolio-list h2 {
