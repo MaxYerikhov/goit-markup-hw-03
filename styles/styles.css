@@ -44,6 +44,7 @@ section {
 
 address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .container {
@@ -143,7 +144,7 @@ ul {
 .head-block {
   background: var(--dark-background-color);
   padding-top: 200px;
-  padding-bottom: 210px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -276,6 +277,7 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 .team p {
   font-weight: 400;
@@ -295,7 +297,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   color: var(--white-font-color);
-  line-height: 1, 71;
+  line-height: 1.71;
 }
 
 .location:hover,
@@ -307,12 +309,12 @@ footer {
   color: var(--white-font-color);
 }
 
-.footer-contacts {
+.footer-contacts:not(:first-child) {
   margin-top: 9px;
 }
 
-.footer-adress {
-  margin-top: 20px;
+.footer-contacts {
+  line-height: 1.71;
 }
 
 /* portfolio */
@@ -397,6 +399,7 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .portfolio-list p {
